@@ -1,0 +1,15 @@
+.titleDropShadow {
+  text-shadow: 0px 3.29741px 8px rgba(0, 0, 0, 0.5);
+
+  @media (min-width: 768px) {
+    text-shadow: 0px 14px 25px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.subtitleDropShadow {
+  text-shadow: 0px 3.29741px 2.35529px rgba(0, 0, 0, 0.5);
+
+  @media (min-width: 768px) {
+    text-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+  }
+}

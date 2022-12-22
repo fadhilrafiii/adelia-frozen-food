@@ -1,0 +1,23 @@
+{
+  "semi": true,
+  "trailingComma": "all",
+  "singleQuote": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "jsxSingleQuote": false,
+  "bracketSpacing": true,
+  "importOrder": [
+    "^(react$|next/)",
+    "<THIRD_PARTY_MODULES>",
+    "^components",
+    "^shared",
+    "^[../](.*)(?<!.scss)$",
+    "^[./](.*)(?<!.scss)$",
+    "(.*)/api(.*)",
+    "(.*)scss$",
+    "^public"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderCaseInsensitive": true
+}
