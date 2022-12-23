@@ -18,6 +18,9 @@ module.exports = {
     colors: {
       grey: '#636363',
       white: '#fff',
+      black: '#000',
+      'light-grey': '#D9D9D9',
+      'lighter-grey': '#F8F9FA',
     },
     fontFamily: {
       primary: ['var(--primary-font)', ...fontFamily.serif],
