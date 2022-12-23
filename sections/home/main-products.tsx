@@ -44,7 +44,7 @@ const MAIN_PRODUCTS: Product[] = [
   },
   {
     image: BaksoBulbulUrat,
-    title: 'kebab king saus cabe',
+    title: 'bakso bulbul urat',
     weight: 600,
     qty: 50,
     price: 45000,
@@ -57,7 +57,7 @@ const MainProducts = () => {
       <h2 className="capitalize mb-8 lg:mb-14 text-[30px] lg:text-5xl text-grey text-center !leading-snug">
         Produk Unggulan
       </h2>
-      <div className="flex flex-wrap gap-x-[10px] lg:gap-x-8 gap-y-8 justify-center items-start relative">
+      <div className="flex flex-wrap gap-x-[10px] lg:gap-x-8 gap-y-8 lg:gap-y-14 justify-center items-start relative">
         {MAIN_PRODUCTS.map((product: Product, idx: number) => (
           <div
             key={idx}

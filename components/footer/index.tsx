@@ -38,31 +38,56 @@ const Footer = () => {
             Pusatnya frozen yang berkualitas, lengkap, dan murah
           </p>
           <div className="flex flex-col gap-2 md:gap-4">
-            <div className="flex gap-3 md:gap-5  items-start justify-start">
+            <div
+              className={
+                'flex gap-3 md:gap-5  items-start justify-start ' +
+                styles.socmedIcon
+              }
+            >
               <CallFilledIcon size={13} color={Colors.DarkGrey} />
               <span className="text-[10px] md:text-sm lg:text-[18px] md:[text-18px] text-dark-grey">
                 (+62) 882-7632-8327
               </span>
             </div>
-            <div className="flex gap-3 md:gap-5 items-start justify-start">
+            <div
+              className={
+                'flex gap-3 md:gap-5 items-start justify-start ' +
+                styles.socmedIcon
+              }
+            >
               <LocationOutlineIcon size={13} color={Colors.DarkGrey} />
               <span className="text-[10px] md:text-sm lg:text-[18px] md:[text-18px] text-dark-grey">
                 Jl. Purnawirawan No. 33, Bandar Lampung
               </span>
             </div>
-            <div className="flex gap-3 md:gap-5  items-start justify-start">
+            <div
+              className={
+                'flex gap-3 md:gap-5  items-start justify-start ' +
+                styles.socmedIcon
+              }
+            >
               <InstagramOutlineIcon size={13} color={Colors.DarkGrey} />
               <span className="text-[10px] md:text-sm lg:text-[18px] md:[text-18px] text-dark-grey">
                 adelia_frozen_bdl
               </span>
             </div>
-            <div className="flex gap-3 md:gap-5  items-start justify-start">
+            <div
+              className={
+                'flex gap-3 md:gap-5  items-start justify-start ' +
+                styles.socmedIcon
+              }
+            >
               <TiktokOutlineIcon size={13} color={Colors.DarkGrey} />
               <span className="text-[10px] md:text-sm lg:text-[18px] md:[text-18px] text-dark-grey">
                 adeliafrozenfoodbdl
               </span>
             </div>
-            <div className="flex gap-3 md:gap-5  items-start justify-start">
+            <div
+              className={
+                'flex gap-3 md:gap-5  items-start justify-start ' +
+                styles.socmedIcon
+              }
+            >
               <FacebookFilledIcon size={13} color={Colors.DarkGrey} />
               <span className="text-[10px] md:text-sm lg:text-[18px] md:[text-18px] text-dark-grey">
                 Adelia Grosir (Adelia Frozen Food)

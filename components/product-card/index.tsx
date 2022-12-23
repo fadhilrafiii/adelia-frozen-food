@@ -13,7 +13,7 @@ interface ProductCardProps {
 
 const ProductCard = ({ product }: ProductCardProps) => {
   return (
-    <div className="relative w-full mx-auto md:max-w-[240px] lg:max-w-[414px]">
+    <div className="relative w-full mx-auto md:max-w-[240px] lg:max-w-[414px] flex flex-col">
       <div
         className={
           'relative overflow-hidden aspect-square rounded-[7px] mb-[-36px] lg:mb-[-84px] ' +
@@ -33,7 +33,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
       </div>
       <div
         className={
-          'bg-white flex flex-col py-[6px] lg:py-5 px-3 lg:px-6 gap-[5px] mx-[10px] lg:mx-6 justify-between items-start rounded-[7px] relative z-10 ' +
+          'flex-grow bg-white flex flex-col py-[6px] lg:py-5 px-3 lg:px-6 gap-[5px] mx-[10px] lg:mx-6 justify-between items-start rounded-[7px] relative z-10 ' +
           styles.productContentBoxShadow
         }
       >

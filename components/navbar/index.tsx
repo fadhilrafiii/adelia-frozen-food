@@ -12,7 +12,7 @@ const Navbar = () => {
           Produk
         </Link>
         <Link
-          href="/produk"
+          href="/tentang"
           className="px-6 font-medium text-grey  text-sm md:text-2xl"
         >
           Tentang
