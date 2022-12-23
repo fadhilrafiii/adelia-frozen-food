@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import StarIcon from 'components/icons/star';
+import StarIcon from 'components/icons/star-fill';
 
 import { Review } from 'shared/types/review';
 

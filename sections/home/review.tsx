@@ -68,7 +68,7 @@ const Review = () => {
         breakpoints={recentNewsSwiperBreakpoints}
       >
         {REVIEWS.map((review: Review, idx: number) => (
-          <SwiperSlide key={idx} className="p-3 md:pb-6 relative !h-auto">
+          <SwiperSlide key={idx} className="p-3 pb-6 md:pb-8 relative !h-auto">
             <div className="max-w-[84vw] mx-auto relative h-full">
               <ReviewCard review={review} />
             </div>
