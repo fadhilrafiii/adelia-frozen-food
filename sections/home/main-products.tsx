@@ -5,9 +5,9 @@ import { Product } from 'shared/types/product';
 import BaksoBulbulUrat from 'public/images/bakso-bulbul-urat.jpg';
 import KebabKingSausCabeImg from 'public/images/kebab-king-saus-naga.jpg';
 import KimboMiniOriImg from 'public/images/kimbo-mini-ori.jpg';
-import VigoSosisAyamImg from 'public/images/kimbo-mini-ori.jpg';
 import KraukUdangTempuraImg from 'public/images/krauk-udang-tempura.jpg';
 import PinaKakiNagaImg from 'public/images/pina-kaki-naga.jpg';
+import VigoSosisAyamImg from 'public/images/vigo-sosis-ayam.jpg';
 
 const MAIN_PRODUCTS: Product[] = [
   {
@@ -53,7 +53,7 @@ const MAIN_PRODUCTS: Product[] = [
 
 const MainProducts = () => {
   return (
-    <section id="produk-unggulan" className="px-4 sm:px-8 py-14 lg:py-20">
+    <section id="produk-unggulan" className="px-4 sm:px-8 py-14 md:py-20">
       <h2 className="capitalize mb-8 lg:mb-14 text-[30px] lg:text-5xl text-grey text-center !leading-snug">
         Produk Unggulan
       </h2>

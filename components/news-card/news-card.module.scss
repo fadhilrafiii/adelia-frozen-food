@@ -1,0 +1,16 @@
+.newsCardShadow {
+  box-shadow: 0px 8.06131px 12.5958px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 768px) {
+    box-shadow: 0px 16px 25px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.lineClamp3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}

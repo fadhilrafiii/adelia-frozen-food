@@ -27,7 +27,8 @@ const ProductCard = ({ product }: ProductCardProps) => {
           placeholder="blur"
           blurDataURL="/images/logo.png"
           alt={product.title}
-          sizes="137px"
+          sizes="(max-width: 767px) 137px, 414px"
+          quality={100}
         />
       </div>
       <div
