@@ -101,7 +101,7 @@ const MAIN_PRODUCTS: Product[] = [
 const AllProducts = () => {
   return (
     <section
-      id="produk-unggulan"
+      id="semua-produk-adelia-frozen-food"
       className="px-4 sm:px-8 pb-14 pt-20 md:pb-20 md:pt-24"
     >
       <h2 className="capitalize mb-8 lg:mb-14 text-[30px] lg:text-5xl text-grey text-center !leading-snug">

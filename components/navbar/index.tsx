@@ -18,7 +18,10 @@ const Navbar = () => {
           Tentang
         </Link>
       </div>
-      <div className="absolute inset-x-center w-[84px] md:w-[139px] h-[80px] md:h-[129px]  top-1">
+      <Link
+        href="/"
+        className="absolute inset-x-center w-[84px] md:w-[139px] h-[80px] md:h-[129px]  top-1"
+      >
         <Image
           src="/images/logo.png"
           alt="Adelia Frozen Food Lampung"
@@ -26,7 +29,7 @@ const Navbar = () => {
           fill
           priority
         />
-      </div>
+      </Link>
     </header>
   );
 };

@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import AllProducts from 'sections/produk/all-product';
+import TipsVideos from 'sections/produk/tips-videos';
 import Review from 'sections/shared/review';
 
 const Product = () => {
@@ -14,6 +15,7 @@ const Product = () => {
       </Head>
       <div>
         <AllProducts />
+        <TipsVideos />
         <Review />
       </div>
     </>
