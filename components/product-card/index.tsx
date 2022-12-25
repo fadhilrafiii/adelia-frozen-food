@@ -9,11 +9,16 @@ import styles from './product-card.module.scss';
 
 interface ProductCardProps {
   product: Product;
+  onClick?: () => void;
 }
 
-const ProductCard = ({ product }: ProductCardProps) => {
+const ProductCard = ({ product, onClick = () => null }: ProductCardProps) => {
   return (
-    <div className="relative w-full mx-auto md:max-w-[240px] lg:max-w-[414px] flex flex-col">
+    <div
+      className="relative w-full mx-auto md:max-w-[240px] lg:max-w-[414px] flex flex-col"
+      role="button"
+      onClick={onClick}
+    >
       <div
         className={
           'relative overflow-hidden aspect-square rounded-[7px] mb-[-36px] lg:mb-[-84px] ' +

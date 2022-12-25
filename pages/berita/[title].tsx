@@ -96,7 +96,6 @@ export const getStaticPaths = () => {
 };
 
 export const getStaticProps = (ctx: GetStaticPropsContext) => {
-  console.log(ctx.params);
   return {
     props: {
       news: NEWS.find((news: News) =>
