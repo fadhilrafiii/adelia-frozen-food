@@ -6,15 +6,18 @@ import styles from './news-card.module.scss';
 
 interface NewsCardProps {
   news: News;
+  onClick?: () => void;
 }
 
-const NewsCard = ({ news }: NewsCardProps) => {
+const NewsCard = ({ news, onClick = () => null }: NewsCardProps) => {
   return (
     <div
       className={
-        'relative mx-auto bg-white rounded-[12px] md:rounded-[25px] ' +
+        'relative mx-auto bg-white rounded-[12px] md:rounded-[25px] !h-full ' +
         styles.newsCardShadow
       }
+      role="button"
+      onClick={onClick}
     >
       <div className="overflow-hidden aspect-[10/9] relative">
         <Image
@@ -28,7 +31,7 @@ const NewsCard = ({ news }: NewsCardProps) => {
         />
       </div>
       <div className="p-[14px] md:p-[18px] md:pb-6 lg:p-6 lg:pb-10  mb-[6.5px]">
-        <h4 className="text-sm md:text-xl lg:text-2xl font-bold capitalize md:mb-[10px]">
+        <h4 className="text-sm md:text-xl xl:text-2xl font-bold capitalize md:mb-[10px]">
           {news.title}
         </h4>
         <p className={'text-[10px] md:text-xs lg:text-sm ' + styles.lineClamp3}>

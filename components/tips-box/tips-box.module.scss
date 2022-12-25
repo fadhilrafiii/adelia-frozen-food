@@ -1,0 +1,7 @@
+.ytVideoWrapper {
+  box-shadow: 0px 9.03943px 9.03943px -6.02629px rgba(0, 0, 0, 0.2);
+
+  @media (min-width: 1024px) {
+    box-shadow: 0px 18px 18px -12px rgba(0, 0, 0, 0.2);
+  }
+}

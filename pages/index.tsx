@@ -3,8 +3,8 @@ import Head from 'next/head';
 import Landing from 'sections/home/landing';
 import MainProducts from 'sections/home/main-products';
 import RecentNews from 'sections/home/recent-news';
-import Review from 'sections/home/review';
 import Stats from 'sections/home/stats';
+import Review from 'sections/shared/review';
 
 const Home = () => {
   return (

@@ -19,3 +19,13 @@
   width: 100% !important;
   height: 100% !important;
 }
+
+.socmedIcon svg {
+  height: 13px !important;
+  width: 13px !important;
+
+  @media (min-width: 1024px) {
+    height: 20px !important;
+    width: 20px !important;
+  }
+}

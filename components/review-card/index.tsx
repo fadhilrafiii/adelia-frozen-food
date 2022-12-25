@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import StarIcon from 'components/icons/star';
+import StarIcon from 'components/icons/star-fill';
 
 import { Review } from 'shared/types/review';
 
@@ -14,7 +14,8 @@ const ReviewCard = ({ review }: ReviewCardProps) => {
   return (
     <div
       className={
-        'flex rounded-[12px] overflow-hidden h-full ' + styles.reviewCardShadow
+        'flex rounded-[12px] md:rounded-[20px] overflow-hidden h-full ' +
+        styles.reviewCardShadow
       }
     >
       <div className="basis-1/3 relative">
