@@ -19,7 +19,7 @@ const NewsCard = ({ news, onClick = () => null }: NewsCardProps) => {
       role="button"
       onClick={onClick}
     >
-      <div className="overflow-hidden aspect-[10/9] relative">
+      <div className="overflow-hidden aspect-[6/5] relative">
         <Image
           src={news.image}
           alt={news.title}

@@ -26,7 +26,7 @@ const ProductCard = ({ product, onClick = () => null }: ProductCardProps) => {
         }
       >
         <Image
-          src={product.image}
+          src={product.images[0]}
           className="object-cover"
           fill
           placeholder="blur"
@@ -50,7 +50,7 @@ const ProductCard = ({ product, onClick = () => null }: ProductCardProps) => {
             {getWeightPerQtyProduct(product.weight, product.qty)}
           </span>
         </div>
-        <div className="text-sm lg:text-2xl text-black font-bold">
+        <div className="text-sm lg:text-2xl text-black font-bold pointer-events-none">
           <CurrencyFormat
             thousandSpacing="2s"
             value={product.price}
