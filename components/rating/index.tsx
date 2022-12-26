@@ -7,7 +7,7 @@ import styles from './rating.module.scss';
 interface RatingProps {
   iconColor?: string;
   rating: number;
-  className: string;
+  className?: string;
   iconSize?: 'large' | 'medium' | 'small';
 }
 
