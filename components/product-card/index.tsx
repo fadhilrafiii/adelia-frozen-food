@@ -51,9 +51,10 @@ const ProductCard = ({ product, onClick = () => null }: ProductCardProps) => {
         </div>
         <div className="text-sm lg:text-2xl text-black font-bold pointer-events-none">
           <CurrencyFormat
-            thousandSpacing="2s"
+            thousandSeparator="."
+            decimalSeparator=","
             value={product.price}
-            prefix="Rp."
+            prefix="Rp"
           />
         </div>
       </div>

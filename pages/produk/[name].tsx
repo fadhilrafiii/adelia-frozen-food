@@ -63,9 +63,10 @@ const DetailProduct = ({ product }: DetailProductProps) => {
               </p>
               <div className="pointer-events-none my-[14px] md:my-7 text-3xl md:text-4xl lg:text-5xl font-bold">
                 <CurrencyFormat
-                  thousandSpacing="2s"
+                  thousandSeparator="."
+                  decimalSeparator=","
                   value={product.price}
-                  prefix="Rp."
+                  prefix="Rp"
                 />
               </div>
               <div>

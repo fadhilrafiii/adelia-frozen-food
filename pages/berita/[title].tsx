@@ -8,6 +8,7 @@ import RelatedNews from 'sections/news/related-news';
 import { NEWS } from 'shared/constants/news';
 import { News } from 'shared/types/news';
 import { isImageContent } from 'shared/utils/news';
+import { getTitleCase } from 'shared/utils/string';
 
 interface NewsDetailProps {
   news: News;
@@ -41,7 +42,7 @@ const NewsDetail = ({ news }: NewsDetailProps) => {
   return (
     <>
       <Head>
-        <title>{`${news.title} | Adelia Frozen Food`}</title>
+        <title>{`${getTitleCase(news.title)} | Adelia Frozen Food`}</title>
         <meta name="description" content={news.desc} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -65,11 +66,14 @@ const NewsDetail = ({ news }: NewsDetailProps) => {
           <h1 className="font-medium text-2xl md:text-3xl lg:text-5xl text-dark-grey mb-3 capitalize">
             {news.title}
           </h1>
-          {news.date && (
-            <span className="inline-block text-[10px] md:text-sm lg:text-[18px] opacity-75 mb-6 lg:mb-9">
+          <div className="flex justify-between mb-6 lg:mb-9">
+            <span className="inline-block text-[10px] md:text-sm lg:text-[18px] opacity-75">
               {news.date}
             </span>
-          )}
+            <span className="inline-block text-[10px] md:text-sm lg:text-[18px] opacity-75">
+              Ditulis oleh Admin
+            </span>
+          </div>
           {news.content && typeof news.content !== 'string'
             ? news.content.map(
                 (content: string | StaticImageData, idx: number) => (
