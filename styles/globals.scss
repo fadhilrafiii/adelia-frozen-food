@@ -23,6 +23,7 @@
 :root {
   --color-white-75: rgba(255, 255, 255, 0.75);
   --color-black-5: rgba(0, 0, 0, 0.5);
+  --light-grey: #d9d9d9;
 }
 
 html {
@@ -57,6 +58,10 @@ img {
 
 input {
   width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--light-grey) !important;
 }
 
 .landingHomeSwiper {

@@ -30,7 +30,6 @@ const ProductCard = ({ product, onClick = () => null }: ProductCardProps) => {
           className="object-cover"
           fill
           placeholder="blur"
-          blurDataURL="/images/logo.png"
           alt={product.title}
           sizes="(max-width: 767px) 137px, 414px"
           quality={100}

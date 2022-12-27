@@ -12,16 +12,23 @@ import Rating from 'components/rating';
 import { PRODUCTS } from 'shared/constants/product';
 import { Product } from 'shared/types/product';
 import { getWeightPerQtyProduct } from 'shared/utils/products';
+import { getTitleCase } from 'shared/utils/string';
 
 interface DetailProductProps {
   product: Product;
 }
 
 const DetailProduct = ({ product }: DetailProductProps) => {
+  const handleClickOrder = () => {
+    window.open(
+      'https://api.whatsapp.com/send/?phone=6288276328327&text&type=phone_number&app_absent=0',
+    );
+  };
+
   return (
     <>
       <Head>
-        <title>{`${product.title} | Adelia Frozen Food`}</title>
+        <title>{`${getTitleCase(product.title)} | Adelia Frozen Food`}</title>
         <meta name="description" content={product.desc} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -62,7 +69,10 @@ const DetailProduct = ({ product }: DetailProductProps) => {
                 />
               </div>
               <div>
-                <button className="flex items-center justify-center w-full border-none outline-none bg-whatsapp py-3 md:py-5 rounded-[20px] gap-6">
+                <button
+                  className="flex items-center justify-center w-full border-none outline-none bg-whatsapp py-3 md:py-5 rounded-[20px] gap-6"
+                  onClick={handleClickOrder}
+                >
                   <WhatsappOutlineIcon size={28} />
                   <span className="tracking-[0.25em] text-white text-[18px] md:text-2xl lg:text-3xl">
                     PESAN

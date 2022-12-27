@@ -9,7 +9,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import styles from './home.module.scss';
 
-import BannerNuggetImg from 'public/images/banner-nugget.jpg';
+import BannerBg1Img from 'public/images/banner-bg-1.jpg';
+import BannerBg2Img from 'public/images/banner-bg-2.jpg';
+import BannerBg3Img from 'public/images/banner-bg-3.jpg';
 
 interface Banner {
   image: StaticImageData;
@@ -18,15 +20,15 @@ interface Banner {
 
 const BANNERS: Banner[] = [
   {
-    image: BannerNuggetImg,
+    image: BannerBg1Img,
     text: 'Pusatnya frozen yang berkualitas, lengkap, dan murah',
   },
   {
-    image: BannerNuggetImg,
+    image: BannerBg2Img,
     text: 'Frozen food terlengkap di bandar lampung',
   },
   {
-    image: BannerNuggetImg,
+    image: BannerBg3Img,
     text: 'menyediakan segala jenis frozen food yang lezat dan bergizi',
   },
 ];
