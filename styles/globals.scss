@@ -23,6 +23,7 @@
 :root {
   --color-white-75: rgba(255, 255, 255, 0.75);
   --color-black-5: rgba(0, 0, 0, 0.5);
+  --light-grey: #d9d9d9;
 }
 
 html {
@@ -59,6 +60,10 @@ input {
   width: 100%;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: var(--light-grey) !important;
+}
+
 .landingHomeSwiper {
   .swiper-button-next:after,
   .swiper-button-prev:after {
@@ -90,5 +95,17 @@ input {
 
   .swiper-button-prev {
     transform: translateX(min(3vw, 38px));
+  }
+}
+
+.galleryThumbsSwiper {
+  .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .swiper-slide-thumb-active {
+    opacity: 1;
   }
 }

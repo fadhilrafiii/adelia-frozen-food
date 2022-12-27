@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import StarIcon from 'components/icons/star-fill';
+import Rating from 'components/rating';
 
 import { Review } from 'shared/types/review';
 
@@ -35,18 +35,7 @@ const ReviewCard = ({ review }: ReviewCardProps) => {
           </h4>
           <p className="text-justify text-[10px] lg:text-sm">{review.review}</p>
         </div>
-        <div
-          style={{ width: `calc(20% * ${review.rating}` }}
-          className="flex gap-1 overflow-hidden"
-        >
-          {Array(5)
-            .fill(0)
-            .map((_: number, idx: number) => (
-              <span key={idx} className={styles.startIcon}>
-                <StarIcon size={15} color="#FFC93D" />
-              </span>
-            ))}
-        </div>
+        <Rating rating={review.rating} />
       </div>
     </div>
   );

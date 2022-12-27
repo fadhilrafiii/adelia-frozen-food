@@ -23,6 +23,7 @@ module.exports = {
       yellow: '#FFC93D',
       'light-grey': '#D9D9D9',
       'lighter-grey': '#F8F9FA',
+      whatsapp: '#218B23',
     },
     fontFamily: {
       primary: ['var(--primary-font)', ...fontFamily.serif],

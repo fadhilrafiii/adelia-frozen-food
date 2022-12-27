@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer
       id="adelia-frozen-food-info"
-      className={'flex flex-wrap ' + styles.footerShadow}
+      className={'flex flex-wrap bg-white ' + styles.footerShadow}
     >
       <div className="basis-1/2 flex-grow  min-w-[320px]">
         <div className={styles.mapouter}>
