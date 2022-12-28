@@ -21,7 +21,9 @@ interface DetailProductProps {
 const DetailProduct = ({ product }: DetailProductProps) => {
   const handleClickOrder = () => {
     window.open(
-      'https://api.whatsapp.com/send/?phone=6288276328327&text&type=phone_number&app_absent=0',
+      `https://api.whatsapp.com/send/?phone=6288276328327&text=Halo%20saya%20ingin%20memesan%20${getTitleCase(
+        product.title,
+      )}&type=phone_number&app_absent=0`,
     );
   };
 

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import CallFilledIcon from 'components/icons/call-filled';
 import FacebookFilledIcon from 'components/icons/facebook-filled';
 import InstagramOutlineIcon from 'components/icons/instagram-outline';
@@ -38,7 +40,9 @@ const Footer = () => {
             Pusatnya frozen yang berkualitas, lengkap, dan murah
           </p>
           <div className="flex flex-col gap-2 md:gap-4">
-            <div
+            <Link
+              href="https://api.whatsapp.com/send/?phone=6288276328327&text&type=phone_number&app_absent=0"
+              target="_blank"
               className={
                 'flex gap-3 md:gap-5  items-start justify-start ' +
                 styles.socmedIcon
@@ -48,7 +52,7 @@ const Footer = () => {
               <span className="text-[10px] md:text-sm lg:text-[18px] md:[text-18px] text-dark-grey">
                 (+62) 882-7632-8327
               </span>
-            </div>
+            </Link>
             <div
               className={
                 'flex gap-3 md:gap-5 items-start justify-start ' +
@@ -60,7 +64,9 @@ const Footer = () => {
                 Jl. Purnawirawan No. 33, Bandar Lampung
               </span>
             </div>
-            <div
+            <Link
+              href="https://instagram.com/adelia_frozen_bdl?igshid=YmMyMTA2M2Y="
+              target="_blank"
               className={
                 'flex gap-3 md:gap-5  items-start justify-start ' +
                 styles.socmedIcon
@@ -70,8 +76,10 @@ const Footer = () => {
               <span className="text-[10px] md:text-sm lg:text-[18px] md:[text-18px] text-dark-grey">
                 adelia_frozen_bdl
               </span>
-            </div>
-            <div
+            </Link>
+            <Link
+              href="https://www.tiktok.com/@adeliafrozenfoodbdl"
+              target="_blank"
               className={
                 'flex gap-3 md:gap-5  items-start justify-start ' +
                 styles.socmedIcon
@@ -81,8 +89,10 @@ const Footer = () => {
               <span className="text-[10px] md:text-sm lg:text-[18px] md:[text-18px] text-dark-grey">
                 adeliafrozenfoodbdl
               </span>
-            </div>
-            <div
+            </Link>
+            <Link
+              href="https://www.facebook.com/profile.php?id=100034012502987"
+              target="_blank"
               className={
                 'flex gap-3 md:gap-5  items-start justify-start ' +
                 styles.socmedIcon
@@ -92,7 +102,7 @@ const Footer = () => {
               <span className="text-[10px] md:text-sm lg:text-[18px] md:[text-18px] text-dark-grey">
                 Adelia Grosir (Adelia Frozen Food)
               </span>
-            </div>
+            </Link>
           </div>
         </div>
         <div className="flex justify-between">
