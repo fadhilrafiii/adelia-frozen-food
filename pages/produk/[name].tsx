@@ -73,7 +73,7 @@ const DetailProduct = ({ product }: DetailProductProps) => {
               </div>
               <div>
                 <button
-                  className="flex items-center justify-center w-full border-none outline-none bg-whatsapp py-3 md:py-5 rounded-[20px] gap-6"
+                  className="flex items-center justify-center w-full border-none outline-none bg-whatsapp py-3 md:py-5 rounded-[10px] md:rounded-[20px] gap-6"
                   onClick={handleClickOrder}
                 >
                   <WhatsappOutlineIcon size={28} />
