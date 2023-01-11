@@ -14,8 +14,6 @@ const About = () => {
           name="description"
           content="Adelia Frozen Food sebagai toko frozen food yang terlaris di Bandar Lampung semenjak 2015 menjadi pilihan tepat untuk membeli frozen food seperti makanan, sayuran, dan daging."
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col gap-y-16 py-16 lg:py-32 pb-24 lg:pb-[10vw] px-[9vw] items-center">
         <section id="visi-adelia-frozen" className="max-w-[1200px] mx-auto">

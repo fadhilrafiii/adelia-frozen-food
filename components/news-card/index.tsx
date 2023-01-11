@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { News } from 'shared/types/news';
 
@@ -9,15 +10,14 @@ interface NewsCardProps {
   onClick?: () => void;
 }
 
-const NewsCard = ({ news, onClick = () => null }: NewsCardProps) => {
+const NewsCard = ({ news }: NewsCardProps) => {
   return (
-    <div
+    <Link
+      href={`/berita/${news.title}`}
       className={
-        'relative mx-auto bg-white rounded-[12px] md:rounded-[25px] !h-full ' +
+        'inline-block relative mx-auto bg-white rounded-[12px] md:rounded-[25px] !h-full ' +
         styles.newsCardShadow
       }
-      role="button"
-      onClick={onClick}
     >
       <div className="overflow-hidden aspect-[6/5] relative">
         <Image
@@ -38,7 +38,7 @@ const NewsCard = ({ news, onClick = () => null }: NewsCardProps) => {
           {news.desc}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 

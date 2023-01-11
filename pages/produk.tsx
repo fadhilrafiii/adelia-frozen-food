@@ -13,8 +13,6 @@ const Product = () => {
           name="description"
           content="Adelia Frozen Food menjual berbagai macam frozen food seperti Krauk Okago Pangsit, Cireng Sambel Nyelekit, Bakso Bulbul Polos, Vigo Sosis Sapi, Kimbi Mini Ori, Kimbo Jumbo Ori, Pina Kaki Naga, Pina Stik Ikan, Krauk Udang Tempura, Kebab King Saus Cabe, Bakso Bulbul Urat, Vigo Sosis Ayam."
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
         <AllProducts />

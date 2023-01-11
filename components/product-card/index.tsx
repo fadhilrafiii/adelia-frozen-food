@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import CurrencyFormat from 'react-currency-format';
 
@@ -12,12 +13,11 @@ interface ProductCardProps {
   onClick?: () => void;
 }
 
-const ProductCard = ({ product, onClick = () => null }: ProductCardProps) => {
+const ProductCard = ({ product }: ProductCardProps) => {
   return (
-    <div
+    <Link
+      href={`/produk/${product.title}`}
       className="relative w-full mx-auto md:max-w-[240px] lg:max-w-[414px] flex flex-col"
-      role="button"
-      onClick={onClick}
     >
       <div
         className={
@@ -58,7 +58,7 @@ const ProductCard = ({ product, onClick = () => null }: ProductCardProps) => {
           />
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
